@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer.Abstract;
 using DataAccessLayer.Repository;
 using EntityLayer.Concrate;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,8 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EFDestinationDAL: GenericRepository<Destination>, IGenericDAL<Destination>
+    public class EFDestinationDAL: GenericRepository<Destination>, IGenericDAL<Destination> 
     {
+       
     }
 }

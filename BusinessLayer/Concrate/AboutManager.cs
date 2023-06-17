@@ -11,12 +11,12 @@ namespace BusinessLayer.Concrate
 {
     public class AboutManager : IAboutService
     {
-        IAboutDAL _dbContext;
+       private IAboutDAL _dbContext;
         public AboutManager(IAboutDAL context)
         {
             _dbContext = context;   
         }
-        public List<About> GetAll()
+        public List<About> TGetAll()
         {
             return _dbContext.GetList();
         }

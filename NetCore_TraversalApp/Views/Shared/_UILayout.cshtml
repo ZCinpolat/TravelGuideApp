@@ -1,54 +1,26 @@
-﻿@*<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-<body>
-    <div>
-        @RenderBody()
-    </div>
-</body>
-</html>
-*@
-
+﻿
 @{
     Layout = null;
 }
 
 
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
 <!doctype html>
 <html lang="zxx">
 
 @await Html.PartialAsync("~/Views/LayoutPartial/_Header.cshtml");
 
 <body>
-    
+
     <!--header start -->
     @await Html.PartialAsync("~/Views/LayoutPartial/_NavBar.cshtml");
     <!--header end -->
-
     @RenderBody();
-
     <!--/w3l-footer-29-main-->
     @await Html.PartialAsync("~/Views/LayoutPartial/_Footer.cshtml");
 
-
     <!-- Template JavaScript -->
     @await Html.PartialAsync("~/Views/LayoutPartial/_Script.cshtml");
-    
-
-
 
 </body>
-
-
 </html>
-
-
 
