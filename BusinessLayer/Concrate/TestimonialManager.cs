@@ -19,7 +19,7 @@ namespace BusinessLayer.Concrate
             this.eFTestimonialDAL = eFTestimonialDAL;
         }
 
-        public Testimonial GetByIt(int id)
+        public Testimonial TGetById(int id)
         {
             throw new NotImplementedException();
         }

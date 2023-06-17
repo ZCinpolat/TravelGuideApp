@@ -19,7 +19,7 @@ namespace BusinessLayer.Concrate
             this._featureDAL = featureDAL;   
         }
 
-        public Feature GetByIt(int id)
+        public Feature TGetById(int id)
         {
             throw new NotImplementedException();
         }

@@ -21,9 +21,9 @@ namespace BusinessLayer.Concrate
             return _dbContext.GetList();
         }
 
-        public About GetByIt(int id)
+        public About TGetById(int id)
         {
-            return _dbContext.GetList().Where(x => x.AboutID == id).FirstOrDefault();
+            return _dbContext.GetByID(id);
         }
 
         public void TAdd(About t)

@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrate;
+﻿
+using BusinessLayer.Concrate;
 using EntityLayer.Concrate;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +19,9 @@ namespace NetCore_TraversalApp.Controllers
         [HttpGet]
         public IActionResult DestinationDetails(int id)
         {
-            return View();
+            var model = dManager.TGetById(id);
+
+            return View(model);
         }
 
         [HttpPost]

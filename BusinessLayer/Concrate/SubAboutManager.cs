@@ -20,7 +20,7 @@ namespace BusinessLayer.Concrate
             _subDAL = subDAL;
         }
 
-        public SubAbout GetByIt(int id)
+        public SubAbout TGetById(int id)
         {
             throw new NotImplementedException();
         }

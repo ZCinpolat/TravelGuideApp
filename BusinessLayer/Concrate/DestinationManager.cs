@@ -2,6 +2,7 @@
 using DataAccessLayer.Abstract;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrate;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
@@ -26,9 +27,9 @@ namespace BusinessLayer.Concrate
             return eFDestinationDAL.GetList();
         }
 
-        public Destination GetByIt(int id)
+        public Destination TGetById(int id)
         {
-            throw new NotImplementedException();
+            return eFDestinationDAL.GetList().Where(x => x.DestinationID == id).FirstOrDefault();
         }
 
         public void TAdd(Destination t)
