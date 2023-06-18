@@ -15,7 +15,6 @@ namespace DataAccessLayer.Concrate
             builder.UseSqlServer("server=CINPOSOFT\\DB;Database=TraversalDB;integrated security=true");
 
         }
-
         public DbSet<About> Abouts { get; set; }
         public DbSet<About2> About2s { get; set; }
         public DbSet<Contact> Contacts { get; set; }
@@ -26,6 +25,6 @@ namespace DataAccessLayer.Concrate
         public DbSet<NewsLetter> NewsLetters{ get; set; }
         public DbSet<SubAbout> SubAbouts{ get; set; }
         public DbSet<Testimonial> Testimonials{ get; set; }
-
+        public DbSet<Comment> Comments { get; set; }
     }
 }

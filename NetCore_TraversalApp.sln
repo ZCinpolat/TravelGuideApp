@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore_TraversalApp", "NetCore_TraversalApp\NetCore_TraversalApp.csproj", "{6418DA9B-0318-4D4D-B0ED-F79449707BF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore_TraversalApp", "NetCore_TraversalApp\NetCore_TraversalApp.csproj", "{6418DA9B-0318-4D4D-B0ED-F79449707BF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{99972C8C-C239-4474-8921-DCA23A3F895E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{99972C8C-C239-4474-8921-DCA23A3F895E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{96CF6C42-6643-4BEC-8A53-16F95AF17056}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{96CF6C42-6643-4BEC-8A53-16F95AF17056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{59E6874A-F66F-4419-A07E-9FCD7ACF667B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{59E6874A-F66F-4419-A07E-9FCD7ACF667B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

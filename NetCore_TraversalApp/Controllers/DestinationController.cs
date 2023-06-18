@@ -20,13 +20,14 @@ namespace NetCore_TraversalApp.Controllers
         public IActionResult DestinationDetails(int id)
         {
             var model = dManager.TGetById(id);
-
+            ViewBag.DestinationID = id;
             return View(model);
         }
 
         [HttpPost]
         public IActionResult DestinationDetail(Destination d)
         {
+            ViewBag.DestinationID = d.DestinationID;
             return View();
         }
 
