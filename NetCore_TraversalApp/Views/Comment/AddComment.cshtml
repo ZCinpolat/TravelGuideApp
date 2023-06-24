@@ -1,0 +1,37 @@
+﻿
+@model Comment;
+
+<div class="leave-comment-form mt-5" id="reply">
+    <h4 class="side-title mb-2">Add a Comment</h4>
+    <p class="mb-4">
+        Your email address will not be published. Required fields are marked *
+    </p>
+    <form method="post" asp-action="AddNewComment" asp-controller="Comment">
+        <div class="form-group">
+            <textarea name="Description" class="form-control" placeholder="Your Comment*" required=""
+                      spellcheck="false"></textarea>
+        </div>
+        <div class="input-grids row">
+            <div class="form-group col-lg-6">
+                <input   type="text" name="CommentUser" class="form-control" placeholder="Your Name and Surname*"
+                       required="">
+            </div>
+            <div class="form-group col-lg-6">
+                <input type="text" id="DestinationID" name="DestinationID" class="form-control" placeholder="Destination Id*" value="@Model.DestinationID" required="">
+            </div>
+        </div>
+
+       @* <div class="form-group">
+            @Html.LabelFor(model => model.DestinationID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DestinationID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DestinationID, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="submit text-right">
+            <button type="submit" class="btn btn-style btn-primary">Add Comment </button>
+        </div>
+    </form>
+</div>
+

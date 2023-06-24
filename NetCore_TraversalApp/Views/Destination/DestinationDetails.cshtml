@@ -148,9 +148,13 @@
                 <!--//author-card-->
                 @await Component.InvokeAsync("_CommentList", new { id = ViewBag.DestinationID });
 
-                @await Component.InvokeAsync("_AddComment");
+                @*@await Component.InvokeAsync("_AddComment");*@
+                @*@await Html.PartialAsync("~/Views/Comment/AddComment.cshtml",new { DestinationID = ViewBag.DestinationID });*@
+                @await Html.PartialAsync("~/Views/Comment/AddComment.cshtml",new Comment{ DestinationID = ViewBag.DestinationID });
 
-            </div>
+
+
+                
         </div>
         <!--//blog-post-->
 

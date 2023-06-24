@@ -20,7 +20,7 @@ namespace BusinessLayer.Concrate
 
         public void TAdd(Comment t)
         {
-            throw new NotImplementedException();
+            _commentDAL.Insert(t);
         }
 
         public List<Comment> TGetAll()

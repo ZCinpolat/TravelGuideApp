@@ -1,4 +1,5 @@
 ﻿using EntityLayer.Concrate;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrate
 {
-    public class Context : DbContext
+    public class Context : IdentityDbContext<AppUser,AppRole,int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
             builder.UseSqlServer("server=CINPOSOFT\\DB;Database=TraversalDB;integrated security=true");
-
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<About2> About2s { get; set; }

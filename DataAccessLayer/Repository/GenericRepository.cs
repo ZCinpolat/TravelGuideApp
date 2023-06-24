@@ -34,12 +34,14 @@ namespace DataAccessLayer.Repository
         {
             using var c = new Context();
             c.Add(t);
+            c.SaveChanges(true);
         }
 
         public void Update(T t)
         {
             using var c = new Context();
             c.Update(c);
+            c.SaveChanges(true);
         }
 
         public List<T> GetListByFilter(Expression<Func<T, bool>> filter)
