@@ -294,6 +294,7 @@ C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\Humanizer.dll
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\MessagePack.dll
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\Microsoft.Build.dll
@@ -522,4 +523,3 @@ C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\obj\Debug\net
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\obj\Debug\net6.0\NetCore_TraversalApp.pdb
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\obj\Debug\net6.0\NetCore_TraversalApp.genruntimeconfig.cache
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\obj\Debug\net6.0\ref\NetCore_TraversalApp.dll
-C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

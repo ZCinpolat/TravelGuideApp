@@ -1,9 +1,44 @@
+using DataAccessLayer.Concrate;
+using EntityLayer.Concrate;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
+
+//identity icin eklendi start
+builder.Services.AddDbContext<Context>();
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddMvc(config =>
+{
+    var p = new AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .Build();
+    config.Filters.Add(new AuthorizeFilter(p));
+});
+builder.Services.AddMvc();
+//identity - end
+
+
+// Add services to the container.
+//builder.Services.AddControllersWithViews();
+//builder.Services.AddDbContext<Context>();
+//builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+
+//builder.Services.AddScoped<ICustomerAccountProcessDal, EfCustomerAccountProcessDal>();
+//builder.Services.AddScoped<ICustomerAccountProcessService, CustomerAccountProcessManager>();
+
+
+//// Add services to the container.
+//builder.Services.AddControllersWithViews();
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -16,6 +51,12 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+
+//identity icin eklendi - start
+app.UseAuthentication();
+// - end
+
+
 app.UseRouting();
 
 app.UseAuthorization();
@@ -23,5 +64,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Default}/{action=Index}/{id?}");
+
+
 
 app.Run();
