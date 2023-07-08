@@ -5,6 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NetCore_TraversalApp
 build_property.RootNamespace = NetCore_TraversalApp
@@ -14,6 +15,14 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Member/Views/Comment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyXFZpZXdzXENvbW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Member/Views/Destination/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyXFZpZXdzXERlc3RpbmF0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/Comment/AddComment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxBZGRDb21tZW50LmNzaHRtbA==
@@ -63,6 +72,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/MemberLayoutPartial/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfRm9vdGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/MemberLayoutPartial/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfSGVhZGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/MemberLayoutPartial/_NavBarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfTmF2QmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/MemberLayoutPartial/_NavBarPartial2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfTmF2QmFyUGFydGlhbDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/MemberLayoutPartial/_RightSideBarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfUmlnaHRTaWRlQmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/Shared/Components/_CommentList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NvbW1lbnRMaXN0XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -97,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/Shared/_UILayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VSUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Views/Shared/_ValidationScriptsPartial.cshtml]

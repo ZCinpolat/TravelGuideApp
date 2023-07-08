@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using NetCore_TraversalApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 //identity icin eklendi start
 builder.Services.AddDbContext<Context>();
-builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>()
+    .AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddMvc(config =>
@@ -65,6 +67,13 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Default}/{action=Index}/{id?}");
 
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+});
 
 
 app.Run();
