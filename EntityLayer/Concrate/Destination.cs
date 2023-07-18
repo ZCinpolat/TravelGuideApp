@@ -23,6 +23,8 @@ namespace EntityLayer.Concrate
         public string Details2 { get; set; }
         public string Image2 { get; set; }
         public List<Comment> CommentList { get; set; }
+        public List<Reservation> ReservationList { get; set; }
+
 
     }
 }

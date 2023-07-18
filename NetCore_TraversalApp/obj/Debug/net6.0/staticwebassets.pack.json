@@ -2317,6 +2317,10 @@
       "PackagePath": "staticwebassets\\soft-ui-dashboard\\pages\\virtual-reality.html"
     },
     {
+      "Id": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\user-images\\01b94c62-d2d4-48ff-a4da-b1b3be3828a9.jpg",
+      "PackagePath": "staticwebassets\\user-images\\01b94c62-d2d4-48ff-a4da-b1b3be3828a9.jpg"
+    },
+    {
       "Id": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\web\\css\\style.css",
       "PackagePath": "staticwebassets\\web\\css\\style.css"
     },

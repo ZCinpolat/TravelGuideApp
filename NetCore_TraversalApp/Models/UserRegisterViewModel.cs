@@ -16,6 +16,9 @@ namespace NetCore_TraversalApp.Models
         [Required(ErrorMessage ="Please enter email address")]
         public string Email{ get; set; }
 
+        [Required(ErrorMessage = "Please enter phone")]
+        public string Phone { get; set; }
+
         [Required(ErrorMessage = "Please enter password")]
         public string Password{ get; set; }
 

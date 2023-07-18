@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U/s2esPmRMOPvPnFyTiiBw9hPljSIY5jLuoLoIaN60c=",
+  "Hash": "ZdnNo6RG9ppMVxZgCjAbI60Imq1Ouv0ZEp3ltxOys2A=",
   "Source": "NetCore_TraversalApp",
   "BasePath": "_content/NetCore_TraversalApp",
   "Mode": "Default",
@@ -9875,6 +9875,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Traversal-Starter\\starter-license-W3Layouts.txt"
+    },
+    {
+      "Identity": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\user-images\\01b94c62-d2d4-48ff-a4da-b1b3be3828a9.jpg",
+      "SourceId": "NetCore_TraversalApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\",
+      "BasePath": "_content/NetCore_TraversalApp",
+      "RelativePath": "user-images/01b94c62-d2d4-48ff-a4da-b1b3be3828a9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-images\\01b94c62-d2d4-48ff-a4da-b1b3be3828a9.jpg"
     },
     {
       "Identity": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\web\\css\\style.css",
