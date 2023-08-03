@@ -62,7 +62,7 @@ namespace NetCore_TraversalApp.Areas.Member.Controllers
                         var streamData = new FileStream(saveLocation, FileMode.Create);
                         await model.UserImage.CopyToAsync(streamData);
                         streamData.Close();
-                        _user.ImageURL = saveLocation;
+                        _user.ImageURL = "/user-images/" + imageName;
                     }
        
                     var result = await _userManeger.UpdateAsync(_user);

@@ -1,0 +1,82 @@
+﻿@model EntityLayer.Concrate.Destination
+
+@{
+    ViewData["Title"] = "AddNewDestination";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Basic Layout</h5>
+                <small class="text-muted float-end">Default label</small>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-fullname">City</label>
+                        <input type="text" asp-for=City class="form-control" id="basic-default-fullname" placeholder="London">
+                    </div>
+                   @* <div class="mb-3">
+                        <label class="form-label" for="basic-default-company">Description</label>
+                        <input type="text" asp-for=Description class="form-control" id="basic-default-company" placeholder="enter description">
+                    </div>*@
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-company">Capacity</label>
+                        <input type="number" asp-for=Capacity class="form-control" id="basic-default-company" placeholder="destination capacity">
+                    </div>
+                   @* <div class="mb-3">
+                        <label class="form-label" for="basic-default-email">Email</label>
+                        <div class="input-group input-group-merge">
+                            <input type="text" id="basic-default-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="basic-default-email2">
+                            <span class="input-group-text" id="basic-default-email2">example.com</span>
+                        </div>
+                        <div class="form-text">You can use letters, numbers &amp; periods</div>
+                    </div>*@
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">Day/Night</label>
+                        <input type="text" asp-for=DayNight id="basic-defaul-money" class="form-control" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">Price</label>
+                        <input type="text" asp-for=Price id="basic-defaul-money" class="form-control" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">CoverImage</label>
+                        <input type="text" asp-for=CoverImage id="basic-defaul-CoverImage" class="form-control" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">Details1</label>
+                        <input type="text" asp-for=Details1 id="basic-defaul-Details1" class="form-control" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">Details2</label>
+                        <input type="text" asp-for=Details2 id="basic-defaul-Details2" class="form-control" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">Image</label>
+                        <input type="text" asp-for=Image id="basic-defaul-Image" class="form-control" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">Image</label>
+                        <input type="text" asp-for=Image2 id="basic-defaul-Image" class="form-control" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-message">Description</label>
+                        <textarea asp-for=Description id="basic-default-message" class="form-control" placeholder="Destination Desciption"></textarea>
+                    </div>
+                   @* <div class="mb-3">
+                        <label for="formFile" class="form-label">Image1</label>
+                        <input asp-for=Image class="form-control" type="file" id="formFile">
+                    </div>*@
+
+
+                    <button type="submit" class="btn btn-primary">Add New Destination</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

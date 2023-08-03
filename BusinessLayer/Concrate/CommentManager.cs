@@ -25,27 +25,32 @@ namespace BusinessLayer.Concrate
 
         public List<Comment> TGetAll()
         {
-            throw new NotImplementedException();
+            return _commentDAL.GetList();
         }
 
         public Comment TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _commentDAL.GetByID(id);
         }
 
         public void TRemove(Comment t)
         {
-            throw new NotImplementedException();
+            _commentDAL.Delete(t);
         }
 
         public void TUpdate(Comment t)
         {
-            throw new NotImplementedException();
+            _commentDAL.Update(t);
         }
 
         public List<Comment> TGetCommentListByDestinationID(int destinationId)
         {
             return _commentDAL.GetListByFilter(x => x.DestinationID == destinationId).ToList();
+        }
+
+        public List<Comment> TGetCommentListWithDestinations()
+        {
+            return _commentDAL.GetCommentsWithDestinations();
         }
     }
 }

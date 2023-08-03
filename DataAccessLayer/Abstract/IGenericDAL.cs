@@ -9,7 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IGenericDAL<T>
     {
-
         void Insert(T t);
         void Update(T t);
         void Delete(T t);

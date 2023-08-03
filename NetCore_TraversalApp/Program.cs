@@ -1,4 +1,8 @@
+using BusinessLayer.Abstract;
+using BusinessLayer.Concrate;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrate;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrate;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -8,12 +12,16 @@ using NetCore_TraversalApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+builder.Services.AddTransient<ICommentService, CommentManager>();
+builder.Services.AddTransient<ICommentDAL, EFCommentDAL>();
 
 //identity icin eklendi start
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>()
     .AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
+
+
+
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddMvc(config =>
@@ -26,6 +34,8 @@ builder.Services.AddMvc(config =>
 builder.Services.AddMvc();
 //identity - end
 
+
+//builder.Services.AddHttpContextAccessor();
 
 // Add services to the container.
 //builder.Services.AddControllersWithViews();
@@ -65,7 +75,14 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Default}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=SignIn}/{id?}");
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Default}/{action=Index}/{id?}");
+});
 
 app.UseEndpoints(endpoints =>
 {
@@ -74,6 +91,7 @@ app.UseEndpoints(endpoints =>
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
 });
+
 
 
 app.Run();

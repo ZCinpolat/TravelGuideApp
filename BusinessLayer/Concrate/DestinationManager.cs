@@ -34,17 +34,17 @@ namespace BusinessLayer.Concrate
 
         public void TAdd(Destination t)
         {
-            throw new NotImplementedException();
+           eFDestinationDAL.Insert(t);  
         }
 
         public void TRemove(Destination t)
         {
-            throw new NotImplementedException();
+            eFDestinationDAL.Delete(t);
         }
 
         public void TUpdate(Destination t)
         {
-            throw new NotImplementedException();
+            eFDestinationDAL.Update(t);
         }
     }
 }

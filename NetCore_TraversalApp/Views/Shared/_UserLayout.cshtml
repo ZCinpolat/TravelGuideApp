@@ -22,25 +22,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@await Html.PartialAsync("~/Views/MemberLayoutPartial/_HeaderPartial.cshtml")
+@await Html.PartialAsync("~/Views/_MemberLayoutPartial/_HeaderPartial.cshtml")
 
 <body class="g-sidenav-show  bg-gray-100">
 
-    @await Html.PartialAsync("~/Views/MemberLayoutPartial/_NavBarPartial.cshtml")
+    @await Html.PartialAsync("~/Views/_MemberLayoutPartial/_NavBarPartial.cshtml")
 
     <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
    
-        @await Html.PartialAsync("~/Views/MemberLayoutPartial/_NavBarPartial2.cshtml")
+        @await Html.PartialAsync("~/Views/_MemberLayoutPartial/_NavBarPartial2.cshtml")
 
         <div class="container-fluid py-4">
             @RenderBody()
 
-            @await Html.PartialAsync("~/Views/MemberLayoutPartial/_FooterPartial.cshtml")
+            @await Html.PartialAsync("~/Views/_MemberLayoutPartial/_FooterPartial.cshtml")
 
         </div>
     </main>
 
-    @await Html.PartialAsync("~/Views/MemberLayoutPartial/_RightSideBarPartial.cshtml")
+    @await Html.PartialAsync("~/Views/_MemberLayoutPartial/_RightSideBarPartial.cshtml")
 
 
     <!--   Core JS Files   -->

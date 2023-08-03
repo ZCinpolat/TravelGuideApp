@@ -1,0 +1,36 @@
+﻿@using EntityLayer.Concrate;
+@model EntityLayer.Concrate.Reservation;
+
+@{
+    ViewData["Title"] = "AddNewReservation";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h1>Add New Reservation </h1>
+
+<form method="post">
+    <div class="form-group">
+        @Html.Label("Destinations")
+        @Html.DropDownListFor(x => x.Destination,
+            (List<SelectListItem>)ViewBag.DestinationList,new  {@class="form-control"} )
+    </div>
+    <div class="form-group">
+        @Html.Label("Capacity")
+        <input type="text" asp-for="PersonCount"  class="form-control"/>
+    </div>
+    <div class="form-group">
+        @Html.Label("Reservation Date")
+        <input type="date"  class="form-control" asp-for=ReservationDate/>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Comment")
+        <textarea asp-for="Description" class="form-control" placeholder="please inout your comment"></textarea>
+    </div>
+
+    <button class="btn btn-outline-success">Maka a Reservation</button>
+
+</form>
+
+
+

@@ -21,7 +21,7 @@ namespace DataAccessLayer.Repository
         public List<T> GetList()
         {
             using var c = new Context();
-           return c.Set<T>().ToList();
+            return c.Set<T>().ToList();
         }
 
         public T GetByID(int id)
@@ -33,15 +33,15 @@ namespace DataAccessLayer.Repository
         public void Insert(T t)
         {
             using var c = new Context();
-            c.Add(t);
-            c.SaveChanges(true);
+            c.Add<T>(t);
+            c.SaveChanges();
         }
 
         public void Update(T t)
         {
             using var c = new Context();
-            c.Update(c);
-            c.SaveChanges(true);
+            c.Update<T>(t);
+            c.SaveChanges();
         }
 
         public List<T> GetListByFilter(Expression<Func<T, bool>> filter)
