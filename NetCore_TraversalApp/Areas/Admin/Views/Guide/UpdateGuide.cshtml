@@ -1,0 +1,50 @@
+﻿@model EntityLayer.Concrate.Guide
+
+@{
+    ViewData["Title"] = "AddNewDestination";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Update Guide - @Model.GuideID</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    @Html.HiddenFor(x => x.GuideID)
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-fullname">Fullname</label>
+                        <input type="text" asp-for=Name class="form-control" id="basic-default-fullname" placeholder="Fullname...">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">Twitter URL</label>
+                        <input type="text" asp-for=TwitterURL id="basic-defaul-money" class="form-control" placeholder="">
+                        <span asp-validation-for="TwitterURL" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">InstagramURL</label>
+                        <input type="text" asp-for=InstagramURL id="basic-defaul-InstagramURL" class="form-control" placeholder="">
+                        <span asp-validation-for="InstagramURL" class="text-danger"></span>
+
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-money">Image</label>
+                        <input type="text" asp-for=Image id="basic-defaul-Image" class="form-control" placeholder="">
+                        <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-message">Description</label>
+                        <textarea asp-for=Description id="basic-default-message" class="form-control" placeholder="Guide Desciption"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <button class="btn btn-primary">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

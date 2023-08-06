@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EFDestinationDAL: GenericRepository<Destination>, IGenericDAL<Destination> 
+    public class EFDestinationDAL: GenericRepository<Destination>,IDestinationDAL
     {
        
     }

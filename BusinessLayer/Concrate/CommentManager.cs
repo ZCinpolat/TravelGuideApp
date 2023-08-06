@@ -12,12 +12,11 @@ namespace BusinessLayer.Concrate
 {
     public class CommentManager : ICommentService
     {
-        EFCommentDAL _commentDAL;
-        public CommentManager(EFCommentDAL commentDAL)
+        private ICommentDAL _commentDAL;
+        public CommentManager(ICommentDAL commentDAL)
         {
             _commentDAL = commentDAL;
         }
-
         public void TAdd(Comment t)
         {
             _commentDAL.Insert(t);

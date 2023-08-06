@@ -12,21 +12,21 @@ namespace BusinessLayer.Concrate
 {
     public class FeatureManager : IFeatureService
     {
-        private EFFeatureDAL _featureDAL;
+        private IFeatureDAL _featureDAL;
 
-        public FeatureManager(EFFeatureDAL featureDAL)
+        public FeatureManager(IFeatureDAL featureDAL)
         {
             this._featureDAL = featureDAL;   
         }
 
         public Feature TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _featureDAL.GetByID(id);
         }
 
         public void TAdd(Feature t)
         {
-            throw new NotImplementedException();
+            _featureDAL.Insert(t);
         }
 
         public List<Feature> TGetAll()
@@ -36,12 +36,12 @@ namespace BusinessLayer.Concrate
 
         public void TRemove(Feature t)
         {
-            throw new NotImplementedException();
+            _featureDAL.Delete(t);
         }
 
         public void TUpdate(Feature t)
         {
-            throw new NotImplementedException();
+            _featureDAL.Update(t);
         }
     }
 }

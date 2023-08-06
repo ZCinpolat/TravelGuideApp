@@ -12,15 +12,15 @@ namespace BusinessLayer.Concrate
 {
     public class GuideManager : IGuideService
     {
-        private readonly EFGuideDAL _dbContext;
-        public GuideManager(EFGuideDAL context)
+        private IGuideDAL _dbContext;
+        public GuideManager(IGuideDAL context)
         {
             this._dbContext = context;   
         }
 
         public void TAdd(Guide t)
         {
-            throw new NotImplementedException();
+            _dbContext.Insert(t);
         }
 
         public List<Guide> TGetAll()
@@ -30,17 +30,17 @@ namespace BusinessLayer.Concrate
 
         public Guide TGetById(int id)
         {
-            throw new NotImplementedException();
+            return _dbContext.GetByID(id);
         }
 
         public void TRemove(Guide t)
         {
-            throw new NotImplementedException();
+            _dbContext.Delete(t);
         }
 
         public void TUpdate(Guide t)
         {
-            throw new NotImplementedException();
+           _dbContext.Update(t);
         }
     }
 }

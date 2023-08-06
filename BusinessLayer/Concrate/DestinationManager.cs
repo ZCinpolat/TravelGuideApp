@@ -15,36 +15,35 @@ namespace BusinessLayer.Concrate
     public class DestinationManager : IDestinationService
     {
 
-        private EFDestinationDAL eFDestinationDAL;
-
-        public DestinationManager(EFDestinationDAL _eFDestinationDAL)
+        private IDestinationDAL _destinationDAL;
+        public DestinationManager(IDestinationDAL destinationDAL)
         {
-            this.eFDestinationDAL = _eFDestinationDAL;
+            _destinationDAL = destinationDAL;
         }
-
+      
         public List<Destination> TGetAll()
         {
-            return eFDestinationDAL.GetList();
+            return _destinationDAL.GetList();
         }
 
         public Destination TGetById(int id)
         {
-            return eFDestinationDAL.GetList().Where(x => x.DestinationID == id).FirstOrDefault();
+            return _destinationDAL.GetList().Where(x => x.DestinationID == id).FirstOrDefault();
         }
 
         public void TAdd(Destination t)
         {
-           eFDestinationDAL.Insert(t);  
+            _destinationDAL.Insert(t);  
         }
 
         public void TRemove(Destination t)
         {
-            eFDestinationDAL.Delete(t);
+            _destinationDAL.Delete(t);
         }
 
         public void TUpdate(Destination t)
         {
-            eFDestinationDAL.Update(t);
+            _destinationDAL.Update(t);
         }
     }
 }

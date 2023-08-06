@@ -1,10 +1,14 @@
 ﻿using BusinessLayer.Concrate;
 using EntityLayer.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace NetCore_TraversalApp.Controllers
 {
+
+
+    [AllowAnonymous]
     public class CommentController : Controller
     {
         CommentManager commentManager = new CommentManager(new DataAccessLayer.EntityFramework.EFCommentDAL());

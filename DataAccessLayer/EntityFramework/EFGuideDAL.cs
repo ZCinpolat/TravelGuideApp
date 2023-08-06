@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EFGuideDAL : GenericRepository<Guide>, IGenericDAL<Guide>
+    public class EFGuideDAL : GenericRepository<Guide>, IGuideDAL
     {
     }
 }

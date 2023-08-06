@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EFTestimonialDAL : GenericRepository<Testimonial>, IGenericDAL<Testimonial>
+    public class EFTestimonialDAL : GenericRepository<Testimonial>, ITestimonialDAL
     {
     }
 }

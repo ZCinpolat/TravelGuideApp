@@ -10,7 +10,7 @@ namespace NetCore_TraversalApp.Areas.Admin.Controllers
     [Area("Admin")]
     public class CommentController : Controller
     {
-        //CommentManager _CommentManager = new CommentManager(new DataAccessLayer.EntityFramework.EFCommentDAL());
+        //CommentManager _commentManager = new CommentManager(new DataAccessLayer.EntityFramework.EFCommentDAL());
         private readonly ICommentService _commentService;
 
         public CommentController(ICommentService commentService)
@@ -23,5 +23,16 @@ namespace NetCore_TraversalApp.Areas.Admin.Controllers
             var datas = _commentService.TGetCommentListWithDestinations();
             return View(datas);
         }
+
+        [ActionName("DeleteComment")]
+        public IActionResult Delete(int id)
+        {
+            var oComment = _commentService.TGetById(id);
+            _commentService.TRemove(oComment);
+            return RedirectToAction("Index");
+        }
+
+
+
     }
 }

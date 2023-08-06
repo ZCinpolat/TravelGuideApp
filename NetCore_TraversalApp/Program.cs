@@ -1,28 +1,36 @@
-using BusinessLayer.Abstract;
-using BusinessLayer.Concrate;
-using DataAccessLayer.Abstract;
+using BusinessLayer.Container;
 using DataAccessLayer.Concrate;
-using DataAccessLayer.EntityFramework;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using EntityLayer.Concrate;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
-using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.EntityFrameworkCore;
 using NetCore_TraversalApp.Models;
+using NLog.Fluent;
+using Serilog;
+using System.Diagnostics;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddTransient<ICommentService, CommentManager>();
-builder.Services.AddTransient<ICommentDAL, EFCommentDAL>();
+//Active to logger 
+builder.Services.AddLogging(x =>
+{
+    x.ClearProviders();
+    x.SetMinimumLevel(LogLevel.Debug);
+    x.AddDebug();
+});
+
+
+//Add project dependencies
+DependencyServices.Add(builder.Services);
 
 //identity icin eklendi start
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>()
     .AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
 
-
-
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddFluentValidation();
 
 builder.Services.AddMvc(config =>
 {
@@ -52,6 +60,12 @@ builder.Services.AddMvc();
 var app = builder.Build();
 
 
+//Log  writo to txt Files
+var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+var tracePath = Path.Join(path, $"Log_CustomerService_{DateTime.Now.ToString("yyyyMMdd-HHmm")}.txt");
+Trace.Listeners.Add(new TextWriterTraceListener(tracePath));
+Trace.AutoFlush = true;
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -59,6 +73,10 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+
+//Sistemde olmayan bir url cagrilmask sitenildiginde, bu kismi kaldirmamiz gerekiyor.
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404", "?code={0}");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -91,7 +109,6 @@ app.UseEndpoints(endpoints =>
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
 });
-
 
 
 app.Run();

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EFFeature2DAL : GenericRepository<Feature2>, IGenericDAL<Feature2>
+    public class EFFeature2DAL : GenericRepository<Feature2>, IFeature2DAL
     {
 
     }

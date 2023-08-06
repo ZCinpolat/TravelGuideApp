@@ -1,10 +1,13 @@
 ﻿
 using BusinessLayer.Concrate;
 using EntityLayer.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace NetCore_TraversalApp.Controllers
 {
+
+    [AllowAnonymous]
     public class DestinationController : Controller
     {
 
@@ -14,7 +17,6 @@ namespace NetCore_TraversalApp.Controllers
             var destinationList = dManager.TGetAll();
             return View(destinationList);
         }
-
 
         [HttpGet]
         public IActionResult DestinationDetails(int id)

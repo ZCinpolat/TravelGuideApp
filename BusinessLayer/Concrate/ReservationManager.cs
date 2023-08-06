@@ -12,10 +12,10 @@ namespace BusinessLayer.Concrate
 {
     public class ReservationManager : IReservationService
     {
+       
+        private IReservationDAL eFReservationDAL;
 
-        private EFReservationDAL eFReservationDAL;
-
-        public ReservationManager(EFReservationDAL _eFReservationDAL)
+        public ReservationManager(IReservationDAL _eFReservationDAL)
         {
             this.eFReservationDAL = _eFReservationDAL;
         }

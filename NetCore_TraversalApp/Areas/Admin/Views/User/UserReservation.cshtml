@@ -1,0 +1,39 @@
+﻿@using EntityLayer.Concrate;
+@model List<Reservation>;
+@{
+    ViewData["Title"] = "User Reservations";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Guests</h4>
+
+<a href="/Admin/User/AddNewUser" class="btn btn-primary">Add New User</a>
+
+
+<div class="card mt-2">
+    <div class="table-responsive text-nowrap">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Fullname</th>
+                    <th>Destination</th>
+                    <th>Person Count</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>####</strong></td>
+                        <td>@item.Destination.City</td>
+                        <td>@item.PersonCount</td>
+                        <td>@(((DateTime)@item.ReservationDate).ToString("dd/MM/yyyy"))</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
