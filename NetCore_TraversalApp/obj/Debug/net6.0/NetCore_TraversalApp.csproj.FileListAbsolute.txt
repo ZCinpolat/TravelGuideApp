@@ -545,3 +545,12 @@ C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\XLParser.dll
 C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\iTextSharp.LGPLv2.Core.dll
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\SkiaSharp.dll
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll

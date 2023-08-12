@@ -17,7 +17,7 @@ namespace BusinessLayer.ValidationRules
             RuleFor(x => x.InstagramURL).NotEmpty().WithMessage("InstagramURL must not be nill");
             RuleFor(x => x.Image).NotEmpty().WithMessage("Image must not be nill");
             RuleFor(x => x.Description).NotEmpty().WithMessage("Description must not be nill");
-            RuleFor(x => x.Description).MinimumLength(50).WithMessage("Description length should be minimum 50 character");
+            RuleFor(x => x.Description).MinimumLength(5).WithMessage("Description length should be minimum 5 character");
         }
     }
 }

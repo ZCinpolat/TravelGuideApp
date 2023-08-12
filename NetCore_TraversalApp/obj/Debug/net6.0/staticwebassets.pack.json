@@ -9685,6 +9685,14 @@
       "PackagePath": "staticwebassets\\member\\typography.html"
     },
     {
+      "Id": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\reports\\New Text Document.txt",
+      "PackagePath": "staticwebassets\\reports\\New Text Document.txt"
+    },
+    {
+      "Id": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\reports\\pdf\\test1.pdf",
+      "PackagePath": "staticwebassets\\reports\\pdf\\test1.pdf"
+    },
+    {
       "Id": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\sneat-1.0.0\\.browserslistrc",
       "PackagePath": "staticwebassets\\sneat-1.0.0\\.browserslistrc"
     },

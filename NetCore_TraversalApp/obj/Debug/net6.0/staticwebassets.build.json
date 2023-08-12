@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EV+0q95sc/Vue9QGRv7WtFVyomOz8w8Z29ILYsVZaVo=",
+  "Hash": "EwyInTFstsrjSsySKtnfl9zu81vvuNTcE3A0EGGueZg=",
   "Source": "NetCore_TraversalApp",
   "BasePath": "_content/NetCore_TraversalApp",
   "Mode": "Default",
@@ -39319,6 +39319,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\member\\typography.html"
+    },
+    {
+      "Identity": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\reports\\New Text Document.txt",
+      "SourceId": "NetCore_TraversalApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\",
+      "BasePath": "_content/NetCore_TraversalApp",
+      "RelativePath": "reports/New Text Document.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\New Text Document.txt"
+    },
+    {
+      "Identity": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\reports\\pdf\\test1.pdf",
+      "SourceId": "NetCore_TraversalApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\",
+      "BasePath": "_content/NetCore_TraversalApp",
+      "RelativePath": "reports/pdf/test1.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\pdf\\test1.pdf"
     },
     {
       "Identity": "C:\\Source\\NetCore_TraversalApp\\TravelGuideApp\\NetCore_TraversalApp\\wwwroot\\sneat-1.0.0\\.browserslistrc",
