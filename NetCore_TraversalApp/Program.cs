@@ -1,7 +1,10 @@
 using BusinessLayer.Container;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrate;
 using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
+using DTOLayer.DTOs.AnnouncementDTOs;
 using EntityLayer.Concrate;
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -24,13 +27,23 @@ builder.Services.AddLogging(x =>
 
 //Add project dependencies
 DependencyServices.Add(builder.Services);
+DependencyServices.AddCustomerValidator(builder.Services);
 
 //identity icin eklendi start
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>()
     .AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
 
+
+//Use httpClient for other api service URI's
+builder.Services.AddHttpClient();
+
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
+
 builder.Services.AddControllersWithViews().AddFluentValidation();
+
+
 
 builder.Services.AddMvc(config =>
 {

@@ -1,4 +1,4 @@
-﻿namespace NetCore_TraversalApp.Models.ExportModel
+﻿namespace BusinessLayer.ExportModel
 {
     public class DestinationExportModel
     {

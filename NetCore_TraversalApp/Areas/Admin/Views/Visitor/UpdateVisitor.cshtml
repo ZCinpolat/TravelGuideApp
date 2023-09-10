@@ -1,0 +1,57 @@
+﻿@using NetCore_TraversalApp.Areas.Admin.Views;
+
+@model VisitorViewModel;
+
+@{
+    ViewData["Title"] = "Update Visitor";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-xl">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Update Visitor</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    @Html.HiddenFor(x => x.VisitorID)
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-fullname">Name</label>
+                        <input type="text" asp-for=Name class="form-control" id="basic-default-fullname" placeholder="Visitor Name">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-fullname">Surname</label>
+                        <input type="text" asp-for=Surname class="form-control" id="basic-default-fullname" placeholder="Visitor Surname">
+                        <span asp-validation-for="Surname" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-fullname">Mail</label>
+                        <input type="text" asp-for=Mail class="form-control" id="basic-default-fullname" placeholder="Visitor Mail">
+                        <span asp-validation-for="Mail" class=" text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-message">City</label>
+                        <textarea asp-for=City id="basic-default-message" class="form-control" placeholder="City"></textarea>
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-message">Country</label>
+                        <textarea asp-for=Country id="basic-default-message" class="form-control" placeholder="Country"></textarea>
+                        <span asp-validation-for="Country" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

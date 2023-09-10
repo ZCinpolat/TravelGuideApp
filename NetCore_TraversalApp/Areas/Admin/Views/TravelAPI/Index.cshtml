@@ -1,0 +1,33 @@
+﻿@using NetCore_TraversalApp.Areas.Admin.Models;
+@model BookingCurrencyRateViewModel;
+@{
+    ViewData["Title"] = "Currency ";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Currenct Rates </span></h4>
+
+<h5>  @Model.BaseCurrency  - @Model.BaseCurrencyDate</h5>
+<!-- Basic Bootstrap Table -->
+<div class="card mt-2">
+    <div class="table-responsive text-nowrap">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Rate</th>
+                    <th>Currency</th>
+                </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+                @foreach (var item in Model.Rates)
+                {
+                    <tr>
+                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.Rate</strong></td>
+                        <td>@item.Currency </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

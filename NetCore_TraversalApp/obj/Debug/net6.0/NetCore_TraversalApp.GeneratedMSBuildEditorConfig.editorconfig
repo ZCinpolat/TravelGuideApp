@@ -16,8 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Source\NetCore_TraversalApp\TravelGuideApp\NetCore_TraversalApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/Announcement/AddAnnouncement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQW5ub3VuY2VtZW50XEFkZEFubm91bmNlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/Announcement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQW5ub3VuY2VtZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/Announcement/UpdateAnnouncement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQW5ub3VuY2VtZW50XFVwZGF0ZUFubm91bmNlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/Comment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29tbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/ContactUs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/Dashboard/Index.cshtml]
@@ -52,12 +68,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR3VpZGVcVXBkYXRlR3VpZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/Mail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/TravelAPI/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHJhdmVsQVBJXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/User/UserReservation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxVc2VyUmVzZXJ2YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/Visitor/AddNewVisitor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmlzaXRvclxBZGROZXdWaXNpdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/Visitor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmlzaXRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/Visitor/UpdateVisitor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVmlzaXRvclxVcGRhdGVWaXNpdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Source/NetCore_TraversalApp/TravelGuideApp/NetCore_TraversalApp/Areas/Admin/Views/_ViewImports.cshtml]
